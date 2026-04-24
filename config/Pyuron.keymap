@@ -85,6 +85,22 @@
 
             label = "MKP_EXIT_AML";
         };
+
+        mac: mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&macro_tap>, <&to 0>;
+
+            label = "MAC";
+        };
+
+        windows: windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>, <&macro_tap>, <&to 3>;
+
+            label = "WINDOWS";
+        };
     };
 
     lt_to_layer_0: lt_to_layer_0 {
@@ -196,10 +212,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans              &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &mkp_exit_AML LCLK  &mkp_exit_AML RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans              &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans              &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans              &trans              &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &mkp_exit_AML MB4  &mkp_exit_AML LCLK  &mkp_exit_AML MCLK  &mkp_exit_AML RCLK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans              &mkp_exit_AML MB5   &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans              &trans              &trans              &trans
             >;
         };
 
