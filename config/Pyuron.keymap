@@ -101,6 +101,34 @@
 
             label = "WINDOWS";
         };
+
+        pw_work: pw_work {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(W) &kp O &kp R &kp K &kp H &kp I &kp R &kp O &kp N6 &kp N2 &kp N9 &kp N5>;
+            label = "PW_WORK";
+        };
+
+        pw_6a: pw_6a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N6 &kp F &kp LS(J) &kp J &kp N4 &kp LS(H) &kp A &kp N1 &kp N3 &kp G &kp LS(A) &kp C>;
+            label = "PW_6A";
+        };
+
+        pw_6: pw_6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N6 &kp F &kp LS(J) &kp J &kp N4 &kp LS(H) &kp AT &kp N1 &kp N3 &kp G &kp LS(A) &kp C>;
+            label = "PW_6";
+        };
+
+        pw_muji: pw_muji {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp T &kp E &kp A &kp W &kp N4 &kp Y &kp A>;
+            label = "PW_MUJI";
+        };
     };
 
     lt_to_layer_0: lt_to_layer_0 {
