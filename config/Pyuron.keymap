@@ -167,10 +167,10 @@
 
         num {
             bindings = <
-&kp ESCAPE                  &kp HOME        &kp UP_ARROW    &kp END          &none                        &trans            &trans          &kp UP_ARROW    &trans           &trans
-&kp LC(LA(LG(LEFT_ARROW)))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(LA(LG(RIGHT_ARROW)))  &trans            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&none                       &none           &none           &none            &kp LA(LG(UP_ARROW))         &trans            &trans          &trans          &kp RIGHT_ALT    &kp TAB
-&kp RIGHT_SHIFT             &trans          &trans          &trans           &kp LEFT_COMMAND             &lt 4 LEFT_SHIFT  &trans          &trans          &trans           &trans
+&kp ESCAPE                  &kp HOME        &kp UP_ARROW    &kp END          &none                        &none             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&kp LC(LA(LG(LEFT_ARROW)))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(LA(LG(RIGHT_ARROW)))  &none             &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
+&none                       &none           &none           &none            &kp LA(LG(UP_ARROW))         &trans            &trans        &none         &kp NUMBER_7  &kp NUMBER_8
+&kp NUMBER_9                &trans          &trans          &trans           &kp LEFT_COMMAND             &lt 4 LEFT_SHIFT  &trans        &trans        &trans        &trans
             >;
         };
 
