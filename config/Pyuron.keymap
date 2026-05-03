@@ -149,10 +149,10 @@
 
         mac {
             bindings = <
-&kp Q             &kp W      &kp E          &kp R             &kp T      &kp Y        &kp U          &lt 7 I      &kp O          &kp P
-&kp A             &kp S      &kp D          &kp F             &kp G      &kp H        &kp J          &kp K        &kp L          &mt LEFT_COMMAND SEMICOLON
-&mt LEFT_SHIFT Z  &kp X      &kp C          &kp V             &kp B      &lt 9 LANG1  &kp LANG2      &kp N        &kp M          &kp COMMA
-&kp DOT           &kp SLASH  &lt 10 DELETE  &kp LEFT_CONTROL  &kp SPACE  &lt 2 TAB    &kp BACKSPACE  &lt 1 ENTER  &kp RIGHT_ALT  &lt 4 ESC
+&kp Q             &kp W                 &kp E                    &kp R                &kp T      &kp Y        &kp U              &lt 7 I      &kp O                           &kp P
+&kp A             &kp S                 &kp D                    &kp F                &kp G      &kp H        &kp J              &kp K        &kp L                           &mt LEFT_COMMAND SEMICOLON
+&mt LEFT_SHIFT Z  &kp X                 &kp C                    &kp V                &kp B      &lt 9 LANG1  &lt 11 LANGUAGE_2  &kp N        &kp M                           &kp COMMA
+&kp DOT           &mt LEFT_SHIFT SLASH  &mt LEFT_CONTROL DELETE  &lt 10 LC(UP_ARROW)  &kp SPACE  &lt 2 TAB    &kp BACKSPACE      &lt 1 ENTER  &mt RIGHT_ALT LS(LG(NUMBER_4))  &tog 9
             >;
         };
 
@@ -160,17 +160,17 @@
             bindings = <
 &kp EXCLAMATION    &kp AT_SIGN        &kp HASH           &kp DOLLAR  &kp PERCENT    &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
 &kp CARET          &kp HASH           &kp DOUBLE_QUOTES  &kp SQT     &kp PIPE       &kp EQUAL      &kp MINUS     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LC(SEMICOLON)
-&none              &none              &none              &none       &kp BACKSLASH  &none          &trans        &kp PLUS              &kp UNDERSCORE         &kp LEFT_BRACKET
-&kp RIGHT_BRACKET  &kp LG(SEMICOLON)  &trans             &trans      &trans         &trans         &trans        &trans                &trans                 &trans
+&none              &none              &none              &none       &kp BACKSLASH  &trans         &trans        &kp PLUS              &kp UNDERSCORE         &kp LEFT_BRACKET
+&kp RIGHT_BRACKET  &kp LG(SEMICOLON)  &trans             &trans      &mo 11         &trans         &trans        &trans                &trans                 &trans
             >;
         };
 
         num {
             bindings = <
-&kp ESCAPE                  &kp HOME        &kp UP_ARROW    &kp END          &none                        &none             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&kp LC(LA(LG(LEFT_ARROW)))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(LA(LG(RIGHT_ARROW)))  &none             &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
-&none                       &none           &none           &none            &kp LA(LG(UP_ARROW))         &trans            &trans        &none         &kp NUMBER_7  &kp NUMBER_8
-&kp NUMBER_9                &trans          &trans          &trans           &kp LEFT_COMMAND             &lt 4 LEFT_SHIFT  &trans        &trans        &trans        &trans
+&kp ESCAPE                  &kp HOME        &kp UP_ARROW    &kp END          &kp LG(R)                    &none                 &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &none
+&kp LC(LA(LG(LEFT_ARROW)))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(LA(LG(RIGHT_ARROW)))  &kp LA(LEFT_COMMAND)  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_0
+&none                       &none           &none           &mo 6            &none                        &trans                &trans        &kp LEFT_SHIFT  &kp NUMBER_7  &kp NUMBER_8
+&kp NUMBER_9                &kp NUMBER_0    &trans          &trans           &trans                       &trans                &trans        &trans          &trans        &trans
             >;
         };
 
@@ -203,10 +203,10 @@
 
         function {
             bindings = <
-&trans           &trans  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &trans            &trans            &trans          &kp UP_ARROW    &trans           &trans
-&kp A            &trans  &trans                &trans                &trans            &trans            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT   &kp X   &kp C                 &kp V                 &trans            &trans            &trans          &trans          &kp RIGHT_ALT    &kp TAB
-&kp RIGHT_SHIFT  &trans  &trans                &trans                &kp LEFT_COMMAND  &lt 4 LEFT_SHIFT  &trans          &trans          &trans           &trans
+&trans          &trans   &trans  &kp LS(LG(NUMBER_5))  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10
+&kp A           &trans   &trans  &trans                &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F12
+&kp LEFT_SHIFT  &kp X    &kp C   &trans                &trans  &trans  &trans  &trans  &kp F7  &kp F8
+&kp F9          &kp F11  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
