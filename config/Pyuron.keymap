@@ -97,14 +97,14 @@
         pw_6a: pw_6a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N6 &kp F &kp LS(J) &kp J &kp N4 &kp LS(H) &kp A &kp N1 &kp N3 &kp G &kp LS(A) &kp C>;
+            bindings = <&kp N6 &kp LS(F) &kp J &kp LS(J) &kp N4 &kp LS(H) &kp A &kp N1 &kp N3 &kp G &kp LS(A) &kp C>;
             label = "PW_6A";
         };
 
         pw_6: pw_6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N6 &kp F &kp LS(J) &kp J &kp N4 &kp LS(H) &kp AT &kp N1 &kp N3 &kp G &kp LS(A) &kp C>;
+            bindings = <&kp N6 &kp LS(F) &kp J &kp LS(J) &kp N4 &kp LS(H) &kp AT &kp N1 &kp N3 &kp G &kp LS(A) &kp C>;
             label = "PW_6";
         };
 
@@ -225,10 +225,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans             &trans              &trans              &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &mkp_exit_AML MB4  &mkp_exit_AML LCLK  &mkp_exit_AML MCLK  &mkp_exit_AML RCLK  &trans
-&trans  &trans  &trans  &trans  &trans  &trans             &trans              &mkp_exit_AML MB5   &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &trans             &trans              &trans              &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &none              &none               &none               &none               &none
+&trans  &trans  &trans  &trans  &trans  &mkp_exit_AML MB4  &mkp_exit_AML LCLK  &mkp_exit_AML MCLK  &mkp_exit_AML RCLK  &none
+&trans  &trans  &trans  &trans  &trans  &trans             &trans              &mkp_exit_AML MB5   &none               &none
+&none   &none   &trans  &trans  &trans  &trans             &trans              &trans              &trans              &trans
             >;
         };
 
