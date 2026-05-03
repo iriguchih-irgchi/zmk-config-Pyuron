@@ -149,10 +149,10 @@
 
         mac {
             bindings = <
-&kp Q             &kp W                 &kp E         &kp R                &kp T      &kp Y        &kp U              &lt 7 I      &kp O                           &kp P
-&kp A             &kp S                 &kp D         &kp F                &kp G      &kp H        &kp J              &kp K        &kp L                           &mt LEFT_COMMAND SEMICOLON
-&mt LEFT_SHIFT Z  &kp X                 &kp C         &kp V                &kp B      &lt 9 LANG1  &lt 11 LANGUAGE_2  &kp N        &kp M                           &kp COMMA
-&kp DOT           &mt LEFT_SHIFT SLASH  &lt 6 DELETE  &lt 10 LC(UP_ARROW)  &kp SPACE  &lt 2 TAB    &kp BACKSPACE      &lt 1 ENTER  &mt RIGHT_ALT LS(LG(NUMBER_4))  &tog 9
+&kp Q             &kp W                 &kp E         &kp R                &kp T      &kp Y        &kp U          &lt 7 I      &kp O                           &kp P
+&kp A             &kp S                 &kp D         &kp F                &kp G      &kp H        &kp J          &kp K        &kp L                           &mt LEFT_COMMAND SEMICOLON
+&mt LEFT_SHIFT Z  &kp X                 &kp C         &kp V                &kp B      &lt 9 LANG1  &lt 11 LANG2   &kp N        &kp M                           &kp COMMA
+&kp DOT           &mt LEFT_SHIFT SLASH  &lt 6 DELETE  &lt 10 LC(UP_ARROW)  &kp SPACE  &lt 2 TAB    &kp BACKSPACE  &lt 1 ENTER  &mt RIGHT_ALT LS(LG(NUMBER_4))  &tog 9
             >;
         };
 
@@ -176,10 +176,10 @@
 
         windows {
             bindings = <
-&kp Q             &kp W      &kp E                &kp R             &kp T                   &kp Y           &kp U          &kp I        &kp O          &lt 1 P
-&kp A             &kp S      &kp D                &kp F             &kp G                   &kp H           &kp J          &kp K        &kp L          &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X      &kp C                &kp V             &kp B                   &kp LEFT_SHIFT  &kp SEMICOLON  &kp N        &kp M          &kp COMMA
-&kp DOT           &kp SLASH  &ht_alt_layer 5 TAB  &kp LEFT_CONTROL  &mt LEFT_COMMAND SPACE  &lt 2 ESCAPE    &kp BACKSPACE  &lt 3 ENTER  &kp RIGHT_ALT  &lt 4 ESC
+&kp Q             &kp W                 &kp E         &kp R           &kp T      &kp Y        &kp U          &kp I        &kp O                      &lt 1 P
+&kp A             &kp S                 &kp D         &kp F           &kp G      &kp H        &kp J          &kp K        &kp L                      &mt LEFT_CONTROL SEMICOLON
+&mt LEFT_SHIFT Z  &kp X                 &kp C         &kp V           &kp B      &lt 9 LANG1  &lt 11 LANG2   &kp N        &kp M                      &kp COMMA
+&kp DOT           &mt LEFT_SHIFT SLASH  &lt 6 DELETE  &lt 10 LG(TAB)  &kp SPACE  &lt 2 TAB    &kp BACKSPACE  &lt 4 ENTER  &mt RIGHT_ALT PRINTSCREEN  &tog 9
             >;
         };
 
