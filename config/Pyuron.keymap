@@ -24,19 +24,9 @@
             key-positions = <17 18>;
         };
 
-        copy_page_url {
-            bindings = <&kp LG(RS(C))>;
-            key-positions = <17 18 19>;
-        };
-
-        kana {
-            bindings = <&kp LANG1>;
-            key-positions = <23 22>;
-        };
-
-        ei {
-            bindings = <&kp LANG2>;
-            key-positions = <22 21>;
+        left_click {
+            bindings = <&mkp MB1>;
+            key-positions = <7 8>;
         };
     };
 
@@ -149,10 +139,10 @@
 
         mac {
             bindings = <
-&kp Q             &kp W                 &kp E         &kp R                &kp T      &kp Y        &kp U          &lt 7 I      &kp O                           &kp P
-&kp A             &kp S                 &kp D         &kp F                &kp G      &kp H        &kp J          &kp K        &kp L                           &mt LEFT_COMMAND SEMICOLON
-&mt LEFT_SHIFT Z  &kp X                 &kp C         &kp V                &kp B      &lt 9 LANG1  &lt 11 LANG2   &kp N        &kp M                           &kp COMMA
-&kp DOT           &mt LEFT_SHIFT SLASH  &lt 6 DELETE  &lt 10 LC(UP_ARROW)  &kp SPACE  &lt 2 TAB    &kp BACKSPACE  &lt 1 ENTER  &mt RIGHT_ALT LS(LG(NUMBER_4))  &tog 9
+&kp Q             &kp W                 &kp E         &kp R                &kp T        &kp Y        &kp U          &lt 7 I      &kp O                           &kp P
+&kp A             &kp S                 &kp D         &kp F                &kp G        &kp H        &kp J          &kp K        &kp L                           &mt LEFT_COMMAND SEMICOLON
+&mt LEFT_SHIFT Z  &kp X                 &kp C         &kp V                &kp B        &lt 9 LANG2  &lt 11 LANG1   &kp N        &kp M                           &kp COMMA
+&kp DOT           &mt LEFT_SHIFT SLASH  &lt 6 DELETE  &lt 10 LC(UP_ARROW)  &lt 9 SPACE  &lt 2 TAB    &kp BACKSPACE  &lt 1 ENTER  &mt RIGHT_ALT LS(LG(NUMBER_4))  &tog 9
             >;
         };
 
@@ -176,10 +166,10 @@
 
         windows {
             bindings = <
-&kp Q             &kp W                 &kp E         &kp R           &kp T      &kp Y        &kp U          &lt 7 I      &kp O                      &kp P
-&kp A             &kp S                 &kp D         &kp F           &kp G      &kp H        &kp J          &kp K        &kp L                      &mt LEFT_CONTROL SEMICOLON
-&mt LEFT_SHIFT Z  &kp X                 &kp C         &kp V           &kp B      &lt 9 LANG1  &lt 11 LANG2   &kp N        &kp M                      &kp COMMA
-&kp DOT           &mt LEFT_SHIFT SLASH  &lt 6 DELETE  &lt 10 LG(TAB)  &kp SPACE  &lt 2 TAB    &kp BACKSPACE  &lt 4 ENTER  &mt RIGHT_ALT PRINTSCREEN  &tog 9
+&kp Q             &kp W                 &kp E         &kp R           &kp T        &kp Y        &kp U          &lt 7 I      &kp O                      &kp P
+&kp A             &kp S                 &kp D         &kp F           &kp G        &kp H        &kp J          &kp K        &kp L                      &mt LEFT_CONTROL SEMICOLON
+&mt LEFT_SHIFT Z  &kp X                 &kp C         &kp V           &kp B        &lt 9 LANG2  &lt 11 LANG1   &kp N        &kp M                      &kp COMMA
+&kp DOT           &mt LEFT_SHIFT SLASH  &lt 6 DELETE  &lt 10 LG(TAB)  &lt 9 SPACE  &lt 5 TAB    &kp BACKSPACE  &lt 4 ENTER  &mt RIGHT_ALT PRINTSCREEN  &tog 9
             >;
         };
 
