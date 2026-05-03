@@ -185,10 +185,10 @@
 
         sym_win {
             bindings = <
-&kp EXCLAMATION  &kp LEFT_BRACKET  &kp HASH    &kp DOLLAR     &kp PERCENT           &kp CARET          &kp DOUBLE_QUOTES  &kp ASTERISK      &kp N9        &kp N0
-&kp AT_SIGN      &kp HASH          &kp DOLLAR  &kp AMPERSAND  &kp NON_US_BACKSLASH  &kp RIGHT_BRACKET  &kp NUMBER_4       &kp N5            &kp NUMBER_6  &kp MINUS
-&kp LEFT_SHIFT   &none             &none       &none          &none                 &none              &trans             &kp LEFT_BRACKET  &kp NUMBER_1  &kp NUMBER_2
-&kp NUMBER_3     &kp EQUAL         &trans      &trans         &trans                &trans             &trans             &trans            &trans        &kp K_MUTE
+&kp EXCLAMATION  &kp LEFT_BRACKET       &kp HASH     &kp DOLLAR     &kp PERCENT          &kp CARET       &kp DOUBLE_QUOTES  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp LEFT_BRACE
+&kp EQUAL        &kp PLUS               &kp AT_SIGN  &kp AMPERSAND  &kp LS(INT3)         &kp UNDERSCORE  &kp MINUS          &kp RIGHT_BRACE  &kp PIPE              &kp LC(SEMICOLON)
+&none            &none                  &none        &none          &kp INTERNATIONAL_1  &trans          &trans             &kp LS(INT1)     &kp COLON             &kp RIGHT_BRACKET
+&kp BACKSLASH    &kp LS(LC(SEMICOLON))  &trans       &trans         &trans               &trans          &trans             &trans           &trans                &trans
             >;
         };
 
