@@ -66,7 +66,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 6>;
+                <&sl 9>;
 
             label = "MKP_EXIT_AML";
         };
@@ -225,10 +225,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &none              &none               &none               &none               &none
-&trans  &trans  &trans  &trans  &trans  &mkp_exit_AML MB4  &mkp_exit_AML LCLK  &mkp_exit_AML MCLK  &mkp_exit_AML RCLK  &none
-&trans  &trans  &trans  &trans  &trans  &trans             &trans              &mkp_exit_AML MB5   &none               &none
-&none   &none   &trans  &trans  &trans  &trans             &trans              &trans              &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans              &trans              &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &mkp_exit_AML MB4  &mkp_exit_AML LCLK  &mkp_exit_AML MCLK  &mkp_exit_AML RCLK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans              &mkp_exit_AML MB5   &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans              &trans              &trans              &trans
             >;
         };
 
