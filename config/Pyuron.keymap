@@ -176,7 +176,7 @@
 
         windows {
             bindings = <
-&kp Q             &kp W                 &kp E         &kp R           &kp T      &kp Y        &kp U          &kp I        &kp O                      &lt 1 P
+&kp Q             &kp W                 &kp E         &kp R           &kp T      &kp Y        &kp U          &lt 7 I      &kp O                      &kp P
 &kp A             &kp S                 &kp D         &kp F           &kp G      &kp H        &kp J          &kp K        &kp L                      &mt LEFT_CONTROL SEMICOLON
 &mt LEFT_SHIFT Z  &kp X                 &kp C         &kp V           &kp B      &lt 9 LANG1  &lt 11 LANG2   &kp N        &kp M                      &kp COMMA
 &kp DOT           &mt LEFT_SHIFT SLASH  &lt 6 DELETE  &lt 10 LG(TAB)  &kp SPACE  &lt 2 TAB    &kp BACKSPACE  &lt 4 ENTER  &mt RIGHT_ALT PRINTSCREEN  &tog 9
