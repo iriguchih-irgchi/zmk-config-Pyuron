@@ -164,7 +164,7 @@
             bindings = <
 &kp ESCAPE                  &kp HOME        &kp UP_ARROW    &kp END          &kp LG(LS(R))                &none                 &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &none
 &kp LC(LA(LG(LEFT_ARROW)))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(LA(LG(RIGHT_ARROW)))  &kp LA(LEFT_COMMAND)  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_0
-&none                       &none           &none           &none            &none                        &none                 &none         &kp LEFT_SHIFT  &kp NUMBER_7  &kp NUMBER_8
+&kp LC(LG(Q))               &none           &none           &none            &none                        &none                 &none         &kp LEFT_SHIFT  &kp NUMBER_7  &kp NUMBER_8
 &kp NUMBER_9                &kp NUMBER_0    &trans          &trans           &trans                       &trans                &trans        &trans          &trans        &trans
             >;
         };
@@ -191,7 +191,7 @@
             bindings = <
 &kp ESCAPE              &kp HOME        &kp UP_ARROW    &kp END          &kp LS(LC(R))            &none                 &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &none
 &kp LS(LG(LEFT_ARROW))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(LG(RIGHT_ARROW))  &kp LA(LEFT_CONTROL)  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_0
-&none                   &none           &none           &none            &none                    &none                 &none         &kp LEFT_SHIFT  &kp NUMBER_7  &kp NUMBER_8
+&kp LG(L)               &none           &none           &none            &none                    &none                 &none         &kp LEFT_SHIFT  &kp NUMBER_7  &kp NUMBER_8
 &kp NUMBER_9            &kp NUMBER_0    &trans          &trans           &trans                   &trans                &trans        &trans          &trans        &trans
             >;
         };
@@ -243,10 +243,10 @@
 
         macro {
             bindings = <
-&trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans     &trans
-&trans  &pw_6   &pw_6a  &pw_work  &pw_muji  &trans  &trans  &trans  &kp LG(L)  &trans
-&trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans     &trans
-&trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &pw_6   &pw_6a  &pw_work  &pw_muji  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
