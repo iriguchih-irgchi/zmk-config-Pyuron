@@ -225,10 +225,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans             &trans              &trans              &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &mkp_exit_AML MB4  &mkp_exit_AML LCLK  &mkp_exit_AML MCLK  &mkp_exit_AML RCLK  &trans
-&trans  &trans  &trans  &trans  &trans  &trans             &trans              &mkp_exit_AML MB5   &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &trans             &trans              &trans              &trans              &trans
+&trans          &kp HOME        &kp UP_ARROW    &kp END          &trans  &trans    &trans     &mo 7      &trans     &trans
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
+&trans          &trans          &trans          &trans           &trans  &trans    &trans     &mkp MB5   &trans     &trans
+&trans          &trans          &trans          &trans           &trans  &trans    &trans     &trans     &trans     &trans
             >;
         };
 
