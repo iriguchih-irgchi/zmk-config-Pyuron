@@ -133,6 +133,24 @@
         #binding-cells = <2>;
         tapping-term-ms = <200>;
     };
+
+    jis_smic: jis_smic {
+        compatible = "zmk,behavior-mod-morph";
+        label = "JIS_SMIC";
+        bindings = <&kp SEMICOLON>, <&kp SINGLE_QUOTE>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    mt_jis_smic: mt_jis_smic {
+        compatible = "zmk,behavior-hold-tap";
+        label = "MT_JIS_SMIC";
+        bindings = <&kp>, <&jis_smic>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+    };
 };
 
 / {
@@ -172,7 +190,7 @@
         windows {
             bindings = <
 &kp Q             &kp W                 &kp E         &kp R           &kp T        &kp Y        &kp U          &lt 7 I      &kp O                      &kp P
-&kp A             &kp S                 &kp D         &kp F           &kp G        &kp H        &kp J          &kp K        &kp L                      &mt LEFT_CONTROL SEMICOLON
+&kp A             &kp S                 &kp D         &kp F           &kp G        &kp H        &kp J          &kp K        &kp L                      &mt_jis_smic LEFT_CONTROL 0
 &mt LEFT_SHIFT Z  &kp X                 &kp C         &kp V           &kp B        &lt 9 LANG2  &lt 11 LANG1   &kp N        &kp M                      &kp COMMA
 &kp DOT           &mt LEFT_SHIFT SLASH  &lt 6 DELETE  &lt 10 LG(TAB)  &lt 9 SPACE  &lt 5 TAB    &kp BACKSPACE  &lt 4 ENTER  &mt RIGHT_ALT PRINTSCREEN  &tog 9
             >;
@@ -182,7 +200,7 @@
             bindings = <
 &kp EXCLAMATION  &kp LEFT_BRACKET       &kp HASH     &kp DOLLAR     &kp PERCENT          &kp CARET       &kp DOUBLE_QUOTES  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp LEFT_BRACE
 &kp EQUAL        &kp PLUS               &kp AT_SIGN  &kp AMPERSAND  &kp LS(INT3)         &kp UNDERSCORE  &kp MINUS          &kp RIGHT_BRACE  &kp PIPE              &kp LC(SEMICOLON)
-&none            &none                  &none        &none          &kp INTERNATIONAL_1  &none           &none              &kp LS(INT1)     &kp COLON             &kp RIGHT_BRACKET
+&none            &none                  &none        &none          &kp INTERNATIONAL_1  &none           &none              &kp COLON        &kp LS(INT1)          &kp RIGHT_BRACKET
 &kp BACKSLASH    &kp LS(LC(SEMICOLON))  &trans       &trans         &trans               &trans          &trans             &trans           &trans                &trans
             >;
         };
