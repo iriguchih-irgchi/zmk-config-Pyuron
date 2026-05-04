@@ -173,7 +173,7 @@
             bindings = <
 &kp EXCLAMATION    &kp AT_SIGN        &kp HASH           &kp DOLLAR  &kp PERCENT    &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
 &kp CARET          &kp HASH           &kp DOUBLE_QUOTES  &kp SQT     &kp PIPE       &kp EQUAL      &kp MINUS     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LC(SEMICOLON)
-&none              &none              &none              &none       &kp BACKSLASH  &none          &none         &kp PLUS              &kp UNDERSCORE         &kp LEFT_BRACKET
+&kp LEFT_SHIFT     &none              &none              &none       &kp BACKSLASH  &none          &none         &kp PLUS              &kp UNDERSCORE         &kp LEFT_BRACKET
 &kp RIGHT_BRACKET  &kp LG(SEMICOLON)  &trans             &trans      &trans         &trans         &trans        &trans                &trans                 &trans
             >;
         };
@@ -182,8 +182,8 @@
             bindings = <
 &kp ESCAPE                  &kp HOME        &kp UP_ARROW    &kp END          &kp LG(LS(R))                &none                 &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &none
 &kp LC(LA(LG(LEFT_ARROW)))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(LA(LG(RIGHT_ARROW)))  &kp LA(LEFT_COMMAND)  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_0
-&kp LC(LG(Q))               &none           &none           &none            &none                        &none                 &none         &kp LEFT_SHIFT  &kp NUMBER_7  &kp NUMBER_8
-&kp NUMBER_9                &kp NUMBER_0    &trans          &trans           &trans                       &trans                &trans        &trans          &trans        &trans
+&none                       &none           &none           &none            &none                        &none                 &none         &kp LEFT_SHIFT  &kp NUMBER_7  &kp NUMBER_8
+&kp NUMBER_9                &kp LEFT_SHIFT  &trans          &kp LC(LG(Q))    &trans                       &trans                &trans        &trans          &trans        &trans
             >;
         };
 
@@ -200,7 +200,7 @@
             bindings = <
 &kp EXCLAMATION  &kp LEFT_BRACKET  &kp HASH     &kp DOLLAR     &kp PERCENT          &kp CARET       &kp DOUBLE_QUOTES  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp LEFT_BRACE
 &kp EQUAL        &kp PLUS          &kp AT_SIGN  &kp AMPERSAND  &kp LS(INT3)         &kp UNDERSCORE  &kp MINUS          &kp RIGHT_BRACE  &kp PIPE              &kp LC(SEMICOLON)
-&none            &none             &none        &none          &kp INTERNATIONAL_1  &none           &none              &kp COLON        &kp LS(INT1)          &kp RIGHT_BRACKET
+&kp LEFT_SHIFT   &none             &none        &none          &kp INTERNATIONAL_1  &none           &none              &kp COLON        &kp LS(INT1)          &kp RIGHT_BRACKET
 &kp BACKSLASH    &kp LC(SQT)       &trans       &trans         &trans               &trans          &trans             &trans           &trans                &trans
             >;
         };
@@ -209,8 +209,8 @@
             bindings = <
 &kp ESCAPE              &kp HOME        &kp UP_ARROW    &kp END          &kp LS(LC(R))            &none                 &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &none
 &kp LS(LG(LEFT_ARROW))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(LG(RIGHT_ARROW))  &kp LA(LEFT_CONTROL)  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_0
-&kp LG(L)               &none           &none           &none            &none                    &none                 &none         &kp LEFT_SHIFT  &kp NUMBER_7  &kp NUMBER_8
-&kp NUMBER_9            &kp NUMBER_0    &trans          &trans           &trans                   &trans                &trans        &trans          &trans        &trans
+&kp LEFT_SHIFT          &none           &none           &none            &none                    &none                 &none         &kp LEFT_SHIFT  &kp NUMBER_7  &kp NUMBER_8
+&kp NUMBER_9            &kp LEFT_SHIFT  &trans          &kp LG(L)        &trans                   &trans                &trans        &trans          &trans        &trans
             >;
         };
 
@@ -252,10 +252,10 @@
 
         bluetooth {
             bindings = <
-&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans      &trans             &trans           &trans  &trans
-&trans  &trans      &trans        &trans        &trans        &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans
-&trans  &trans      &trans        &mac          &windows      &trans      &bootloader        &trans           &trans  &trans
-&trans  &bt BT_CLR  &trans        &trans        &trans        &trans      &trans             &trans           &trans  &bt BT_CLR_ALL
+&bt BT_CLR_ALL  &bt BT_CLR  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans      &trans             &trans           &trans  &trans
+&trans          &trans      &trans        &trans        &trans        &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans
+&trans          &trans      &trans        &mac          &windows      &trans      &trans             &trans           &trans  &trans
+&trans          &trans      &trans        &trans        &trans        &trans      &trans             &trans           &trans  &trans
             >;
         };
 
