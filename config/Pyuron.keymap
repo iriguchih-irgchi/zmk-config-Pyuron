@@ -31,7 +31,7 @@
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 10>;
+            key-positions = <1 0>;
         };
     };
 
@@ -180,10 +180,10 @@
 
         num {
             bindings = <
-&kp ESCAPE                  &kp HOME        &kp UP_ARROW    &kp END          &kp LG(LS(R))                &none                 &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &none
-&kp LC(LA(LG(LEFT_ARROW)))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(LA(LG(RIGHT_ARROW)))  &kp LA(LEFT_COMMAND)  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_0
-&none                       &none           &none           &none            &none                        &none                 &none         &kp LEFT_SHIFT  &kp NUMBER_7  &kp NUMBER_8
-&kp NUMBER_9                &kp LEFT_SHIFT  &trans          &kp LC(LG(Q))    &trans                       &trans                &trans        &trans          &trans        &trans
+&kp ESCAPE                  &kp HOME        &kp UP_ARROW    &kp END          &kp LG(LS(R))                &none                 &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3  &none
+&kp LC(LA(LG(LEFT_ARROW)))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(LA(LG(RIGHT_ARROW)))  &kp LA(LEFT_COMMAND)  &kp NUMBER_4  &kp NUMBER_5          &kp NUMBER_6  &mt LEFT_SHIFT NUMBER_0
+&kp LEFT_SHIFT              &kp PAGE_UP     &none           &kp PAGE_DOWN    &none                        &none                 &none         &kp LC(LEFT_COMMAND)  &kp NUMBER_7  &kp NUMBER_8
+&kp NUMBER_9                &kp LEFT_SHIFT  &trans          &kp LC(LG(Q))    &trans                       &trans                &trans        &trans                &trans        &trans
             >;
         };
 
@@ -207,10 +207,10 @@
 
         num_win {
             bindings = <
-&kp ESCAPE              &kp HOME        &kp UP_ARROW    &kp END          &kp LS(LC(R))            &none                 &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &none
-&kp LS(LG(LEFT_ARROW))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(LG(RIGHT_ARROW))  &kp LA(LEFT_CONTROL)  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_0
-&kp LEFT_SHIFT          &none           &none           &none            &none                    &none                 &none         &kp LEFT_SHIFT  &kp NUMBER_7  &kp NUMBER_8
-&kp NUMBER_9            &kp LEFT_SHIFT  &trans          &kp LG(L)        &trans                   &trans                &trans        &trans          &trans        &trans
+&kp ESCAPE              &kp HOME        &kp UP_ARROW    &kp END          &kp LS(LC(R))            &none                 &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &none
+&kp LS(LG(LEFT_ARROW))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(LG(RIGHT_ARROW))  &kp LA(LEFT_CONTROL)  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6  &mt LEFT_SHIFT NUMBER_0
+&kp LEFT_SHIFT          &kp PAGE_UP     &none           &kp PAGE_DOWN    &none                    &none                 &none         &kp LEFT_COMMAND  &kp NUMBER_7  &kp NUMBER_8
+&kp NUMBER_9            &kp LEFT_SHIFT  &trans          &kp LG(L)        &trans                   &trans                &trans        &trans            &trans        &trans
             >;
         };
 
